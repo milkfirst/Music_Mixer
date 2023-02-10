@@ -1,4 +1,4 @@
-# Music_Mixer
+# Singing Dino Land the Music Mixer
 
 Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in the land make sounds altogether that create music!
 
