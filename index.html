@@ -5,11 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Mixer</title>
-    <link href="css/reset.css" rel="stylesheet">
+    <!-- do we need a reset.css? -->
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
+    <header>
+        <h1>Singing Dino Land</h1>
+        <p>Place the dinosaurs wherever you want them to chill!</p>
+    </header>
+
+    <section id="main-container">
+
+        <!-- DROP ZONE -->
+        <div class="dino-background">
+            <div class="drop-zone bl"></div>
+            <div class="drop-zone bm"></div>
+            <div class="drop-zone br"></div>
+            <div class="drop-zone tl"></div>
+            <div class="drop-zone tm"></div>
+            <div class="drop-zone tr"></div>
+        </div>
+
+        <!-- DRAGGABLE PIECES -->
+        <div class="dino-pieces">
+            <img src="images/sample_dino1.png" class="dino" alt="Dino 1">
+            <img src="images/sample_dino2.png" class="dino" alt="Dino 2">
+            <img src="images/sample_dino3.png" class="dino" alt="Dino 3">
+            <img src="images/sample_dino4.png" class="dino" alt="Dino 4">
+            <img src="images/sample_dino5.png" class="dino" alt="Dino 5">
+            <img src="images/sample_dino6.png" class="dino" alt="Dino 6">
+        </div>
+
+    </section>
     
-<script src="js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
