@@ -1,3 +1,5 @@
++console.log('Are you ready to drop some dinos? :D');
+
 const dinos = document.querySelectorAll(".dino");
 const dropZones = document.querySelectorAll(".drop-zone");
 
@@ -32,6 +34,7 @@ function dragEnd(e) {
   setTimeout(() => {
     dino.style.display = "flex";
   }, 0);
+  console.log('dropped this dino on me:', this);
 }
 
 function dragEnter(e) {
@@ -47,6 +50,7 @@ function dragLeave(e) {
 
 function dragOver(e) {
   e.preventDefault();
+  console.log('is how many milliseconds dino is being dragged over me'); 
 }
 
 function dropped(e) {
@@ -57,5 +61,6 @@ function dropped(e) {
   const dino = document.querySelector(`#${dinoId}`);
   dino.style.display = "none";
   dropZone.appendChild(dino);
+  console.log('the dino has been dropped over me');
 }
 
