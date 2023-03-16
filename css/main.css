@@ -72,3 +72,58 @@ h1, p   {
 .invisible {
     display: none;
 }
+
+
+.button1 {
+    width: 130px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin: 10px auto;
+    color: #fff;
+    border: 2px solid rgb(1, 54, 9);
+    border-radius: 5px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    background: rgb(41, 131, 6);
+    background: linear-gradient(rgb(37, 131, 6), rgb(12, 180, 174) 100%);
+  }
+ 
+  .button1:hover {
+    background: rgb(41, 131, 6);
+    background: linear-gradient(rgb(51, 186, 6), rgb(5, 92, 89) 100%);
+ }
+ 
+ .instructions {
+
+    display: none;
+    overflow: hidden  ;
+    right: 3%;
+    position: absolute;
+    bottom: 5%;
+    width: 300px;
+    height: 200px;
+    background:#0F2261;
+ }
+
+ .instructions h3 span {
+    color: antiquewhite;
+    font-weight: 700;
+ }
+ 
+ .instructions h3 {
+    margin: 0 20px 0 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+ }
+ 
+ .instructions h2 {
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: antiquewhite;
+ }
