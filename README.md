@@ -2,7 +2,7 @@
 
 Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in the land make sounds altogether that create music!
 
-<img src="images/cat.png" width="400" height="400">
+<img src="images/cat.png"  src="images/chicken.png" width="400" height="400">
 <img src="images/chicken.png" width="400" height="400">
 <img src="images/elephant.png" width="400" height="400">
 
