@@ -6,8 +6,7 @@ Creating a Music Mixer called "The Singing Pet Show" where the magical pets in t
 
 
 
-
-## Contributing
+## Contributing:
 
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
@@ -20,11 +19,13 @@ Basic css and html: Layout and simple CSS animation
 <br>
 Javascript: Drag and drop functions, play selected audio function and button functions.
 
-## Credits
+## Collaborators:
 
 Lalaine - milkfirst
 <br>
 Abdullah - greatgrate1234
+
+## Credits:
 
 <br>
 <br>
