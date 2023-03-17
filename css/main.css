@@ -70,31 +70,12 @@ h1, h2, h3, h4, h5, p {
     text-align: center;
 }
 
-<<<<<<< Updated upstream
-.dino-pieces, .dino-background {
-    margin: 10px auto 0;
-    width: 800px;
-    height: 400px;
-    display: block;
-    overflow: hidden;
-    text-align: center;
-
-}
-
-=======
->>>>>>> Stashed changes
 .dino-pieces {
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-<<<<<<< Updated upstream
-    height: 100px;
-    width: 600px;
-    border: 3px solid #333;
-=======
     width: 700px;
->>>>>>> Stashed changes
     cursor: pointer;
     margin-top: -100px;
 }
@@ -111,16 +92,6 @@ h1, h2, h3, h4, h5, p {
     transform: scale(1.5) rotate(360deg);    
 }
 
-<<<<<<< Updated upstream
-.dino-background { 
-    width:600px; 
-    display: inline-block;
-    background-image: url('../images/sample_background.png');
-    background-repeat: no-repeat;
-}
-
-.drop-zone {
-=======
 .dino-background {
     margin: 0 auto;
     width: 950px;
@@ -135,31 +106,51 @@ h1, h2, h3, h4, h5, p {
   }
   
   .drop-zone {
->>>>>>> Stashed changes
     width: 40%;
     height: 40%;
-    float: left;
     position: relative;
     bottom: 40px;
-}
-
-.drop-zone img {
+  }
+  
+  .drop-zone img {
     float: none;
     padding: 0;
     position: absolute;
-}
+  }
+  
+  .bl img {
+    bottom: 0;
+    left: 0;
+  }
+  
+  .bm img {
+    bottom: 0;
+  }
+  
+  .br img {
+    bottom: 0;
+  }
+  
+  .tl img {
+    bottom: 0;
+  }
+  
+  .tm img {
+    bottom: 0;
+  }
+  
+  .tr img {
+    bottom: 0;
+  }
 
-.bl img { bottom: 0; left: 0; }
-.bm img { bottom: 0; }
-.br img { bottom: 0; right: 0; }
-.tl img { top: 0; left: 0; }
-.tm img { top: 0; }
-.tr img { top: 0; right: 0; }
+  .trr img  {
+    bottom: 0;
+  }
+  
 
 .invisible {
     display: none;
 }
-
 
 .button-1 {
     width: 130px;
