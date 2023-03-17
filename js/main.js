@@ -1,16 +1,18 @@
-+console.log('Are you ready to drop some dinos? :D');
+console.log('Are you ready to drop some dinos? :D');
 
 /* use the querySelectorAll method to select
 all HTML elements with class "dino" and class "drop-zone" */
 
 const dinos = document.querySelectorAll(".dino");
 const dropZones = document.querySelectorAll(".drop-zone");
+const sounds = ["music/music_bassguitar.mp4", "music/music_beatboxing.mp4", "music/music_beats.mp4", "music/music_ukelele.mp4", "music/music_cello.mp4", "music/music_dadadaaaa.mp4", "music/music_drums.mp4"];
 
 /* loop through the dinos array using the forEach method
 and set a unique id for each dinosaur element and adds drag and drop event listeners to each dinosaur.  */
 
 dinos.forEach((dino, index) => {
   dino.setAttribute("id", `dino-${index}`);
+  dino.setAttribute("data-sound", sounds[index]);
   dino.addEventListener("dragstart", dragStart);
   dino.addEventListener("dragend", dragEnd);
 });
@@ -26,11 +28,10 @@ dropZones.forEach(dropZone => {
 
 function dragStart(event) {
     event.dataTransfer.setData("text/plain", event.target.id);
-  
-    // Get the original size of the dinosaur
+    event.dataTransfer.effectAllowed = "move";
+        // Get the original size of the dinosaur
     let originalSize = event.target.dataset.originalSize;
-  
-    // Set the original size as the size of the dinosaur during the drag
+        // Set the original size as the size of the dinosaur during the drag
     event.target.style.width = originalSize + "80px";
     event.target.style.height = originalSize + "80px";
 }
@@ -44,7 +45,6 @@ function dragEnd(e) {
   setTimeout(() => {
     dino.style.display = "flex";
   }, 0);
-  console.log('dropped this dino on me:', this);
 }
 
 /*  dragenter event listener is triggered when a dinosaur enters a drop zone */
@@ -66,7 +66,6 @@ function dragLeave(e) {
 
 function dragOver(e) {
   e.preventDefault();
-  console.log('is how many milliseconds dino is being dragged over me'); 
 }
 
 /* the drop event listener is triggered when a dinosaur is dropped on a drop zone and it appends the dinosaur to the drop zone. */
@@ -74,10 +73,35 @@ function dragOver(e) {
 function dropped(e) {
   e.preventDefault();
   const dropZone = e.target;
-  dropZone.style.backgroundColor = "inherit";
+  
+  if (dropZone.children.length > 0) {
+    return;
+  }
+  
   const dinoId = e.dataTransfer.getData("text/plain");
   const dino = document.querySelector(`#${dinoId}`);
+  
+  if (dino.parentNode.classList.contains('drop-zone')) {
+    dino.parentNode.removeChild(dino);
+  }
+  
+  const sound = new Audio(dino.getAttribute("data-sound"));
+  sound.play();
+  
   dino.style.display = "none";
+  dropZone.style.backgroundColor = "inherit";
   dropZone.appendChild(dino);
-  console.log('the dino has been dropped over me');
 }
+
+// Instrutions button 
+
+const btn = document.querySelector('#info');
+const container = document.querySelector('#inst');
+
+btn.addEventListener("click", function() {
+  if(container.style.display === "block") {
+    container.style.display = "none"
+  } else {
+    container.style.display = "block"
+  }
+});
