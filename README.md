@@ -3,7 +3,9 @@ Creating a Music Mixer called "The Singing Pet Show" where the magical pets in t
 
 <img src="images/readme-img.png">
 
-
+<br>
+<br>
+<br>
 
 ## Contributing:
 1. Fork it!
