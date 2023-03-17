@@ -6,7 +6,6 @@ all HTML elements with class "dino" and class "drop-zone" */
 const dinos = document.querySelectorAll(".dino");
 const dropZones = document.querySelectorAll(".drop-zone");
 
-
 /* loop through the dinos array using the forEach method
 and set a unique id for each dinosaur element and adds drag and drop event listeners to each dinosaur.  */
 
@@ -82,3 +81,16 @@ function dropped(e) {
   dropZone.appendChild(dino);
   console.log('the dino has been dropped over me');
 }
+
+// Instrutions button 
+
+const btn = document.querySelector('#info');
+const container = document.querySelector('#inst');
+
+btn.addEventListener("click", function() {
+  if(container.style.display === "block") {
+    container.style.display = "none"
+  } else {
+    container.style.display = "block"
+  }
+});
