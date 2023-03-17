@@ -2,7 +2,7 @@
 
 Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in the land make sounds altogether that create music!
 
-<img src="images/sample_dino1.png">
+<img src="images/cat.png" width="200" height="400">
 
 ## Contributing
 
