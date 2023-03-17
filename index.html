@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Mixer</title>
-    <!-- do we need a reset.css? -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header id="main-header">
         <h1>Singing Dino Land</h1>
         <p>Place the dinosaurs wherever you want them to chill!</p>
         <p>They haven't learned how to sing yet but they will, one day.</p>
-    </header>
+    </header>     
+
+ 
 
     <section id="main-container">
+
+        <section id="inst">
+            <div class="instruct">
+        
+                <h2>HOW TO PLAY:</h2>
+                <br>
+                <p>Drag the chosen Dino from the box bellow and place it onto the empty spot to make them sing. Each Dino sings at a different pace and tone. Teach the Dinos how to sing!</p> 
+                <br>
+                <h2>Buttons:</h2>
+               
+                <p><strong>Instructions</strong> - Toggle instructions</p> 
+                <p><strong>Restart</strong> - Start over</p>
+            </div>
+            </div>
+        </section>
 
         <!-- DROP ZONE -->
         <div class="dino-background">
@@ -38,32 +57,17 @@
         </div>
 
     </section>
-    
+
+
     <section>
         <div id="resetButton" class="one-item">
             <div class="buttons">
-            <button class="resetButton button1">Reset</button>
-            <button class="restartButton button1">Restart</button>
-            <button id="info" class="button1">Instructions</button>`
+            <button id="info" class="button-1">Instructions</button>
+            <button class="button-1" onClick="window.location.reload();">Restart</button>
         </div>
-            </div>
-        </div>
-
-        </div>      
+        </div>     
     </section>
 
-    <section>        
-        <div class="one-item">
-            <div class="hero-image">
-             <img src="images/mainhero.svg" alt="">
-             <div class="instructions">
-                <h2>HOW TO PLAY:</h2>
-                <h3>Simply dray the icons on the button to the blank space center. Mix and match the beat what your want. Buttons:<br><span>Reset</span> - reset all to default<br><span>Restart</span> - restart songs<br><span>Instructions</span> - Toggle this Menu</h3>
-
-             </div>
-            </div>
-         </div>                                                    
-    </section> 
     
     <script src="js/main.js"></script>
 </body>
