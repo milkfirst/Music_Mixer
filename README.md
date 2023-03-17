@@ -2,9 +2,8 @@
 
 Creating a Music Mixer called "The Singing Pet Show" where the magical pets in the land make sounds together that create music!
 
-<img src="images/cat.png"  src="images/chicken.png" width="400" height="400">
-<img src="images/chicken.png" width="400" height="400">
-<img src="images/elephant.png" width="400" height="400">
+<img src="images/readme-img.png" " width="600" height="400">
+
 
 
 
