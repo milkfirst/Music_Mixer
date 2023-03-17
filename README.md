@@ -1,4 +1,4 @@
-# Singing Dino Land the Music Mixer
+# The Singing Pet Show Music Mixer
 
 Creating a Music Mixer called "The Singing Pet Show" where the magical pets in the land make sounds together that create music!
 
@@ -17,7 +17,9 @@ Creating a Music Mixer called "The Singing Pet Show" where the magical pets in t
 
 ## Built with:
 Basic css and html: Layout and simple CSS animation
+<br>
 Javascript: Drag and drop functions, play selected audio function and button functions.
+<br>
 Includes svg icons and images created from Adobe Illustrator and (stock image)
 
 ## Credits
