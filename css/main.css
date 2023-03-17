@@ -7,7 +7,7 @@ body p {
 }
 
 body h1 {
-    font-size: 54px;
+    font-size: 34px;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -34,6 +34,30 @@ h1, h2, h3, h4, h5, p {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 50px;
+    left: 0;
+    right: 0;
+}
+
+#start-in{
+
+  justify-content: center;
+  align-content: center;
+}
+.start-in {
+    border: 5px solid;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    width: 320px;
+    height: auto;
+    background:rgb(51, 186, 6);
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+
 }
 
 .instruct p {
@@ -41,15 +65,12 @@ h1, h2, h3, h4, h5, p {
 }
 
 
-#main-header {
-    margin-bottom: 30px;
-}
-
 #main-container {
     width: 100%;
     text-align: center;
 }
 
+<<<<<<< Updated upstream
 .dino-pieces, .dino-background {
     margin: 10px auto 0;
     width: 800px;
@@ -60,21 +81,29 @@ h1, h2, h3, h4, h5, p {
 
 }
 
+=======
+>>>>>>> Stashed changes
 .dino-pieces {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
+<<<<<<< Updated upstream
     height: 100px;
     width: 600px;
     border: 3px solid #333;
+=======
+    width: 700px;
+>>>>>>> Stashed changes
     cursor: pointer;
+    margin-top: -100px;
 }
 
 .dino {
     display: inline-block;
     width: 80px;
     height: 80px;
-    margin: 8px;
+    margin: 0 16px;
     transition: all 0.3s ease;
 }
 
@@ -82,6 +111,7 @@ h1, h2, h3, h4, h5, p {
     transform: scale(1.5) rotate(360deg);    
 }
 
+<<<<<<< Updated upstream
 .dino-background { 
     width:600px; 
     display: inline-block;
@@ -90,6 +120,22 @@ h1, h2, h3, h4, h5, p {
 }
 
 .drop-zone {
+=======
+.dino-background {
+    margin: 0 auto;
+    width: 950px;
+    height: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('../images/stage_bg.png');
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .drop-zone {
+>>>>>>> Stashed changes
     width: 40%;
     height: 40%;
     float: left;
@@ -133,7 +179,7 @@ h1, h2, h3, h4, h5, p {
     background: linear-gradient(rgb(37, 131, 6), rgb(12, 180, 174) 100%);
  }
  
- #resetButton {
+  #resetButton {
     width: 100%;
     text-align: center;
     margin: 25px 0 25px 0;

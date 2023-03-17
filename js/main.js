@@ -82,6 +82,22 @@ function dropped(e) {
   console.log('the dino has been dropped over me');
 }
 
+
+//
+
+const btn1 = document.querySelector('#start');
+const container1 = document.querySelector('#start-in');
+
+btn1.addEventListener("click", function() {
+  if(container1.style.display === "none") {
+    container1.style.display = "block"
+  } else {
+    container1.style.display = "none"
+  }
+});
+
+
+
 // Instrutions button 
 
 const btn = document.querySelector('#info');
