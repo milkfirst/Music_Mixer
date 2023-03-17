@@ -1,5 +1,4 @@
 # The Singing Pet Show Music Mixer
-
 Creating a Music Mixer called "The Singing Pet Show" where the magical pets in the land make sounds together that create music!
 
 <img src="images/readme-img.png">
@@ -7,7 +6,6 @@ Creating a Music Mixer called "The Singing Pet Show" where the magical pets in t
 
 
 ## Contributing:
-
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
@@ -20,15 +18,11 @@ Basic css and html: Layout and simple CSS animation
 Javascript: Drag and drop functions, play selected audio function and button functions.
 
 ## Collaborators:
-
 Lalaine - milkfirst
 <br>
 Abdullah - greatgrate1234
 
 ## Credits:
-
-<br>
-<br>
 https://www.incredibox.com/
 
 ## License
