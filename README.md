@@ -1,6 +1,6 @@
 # Singing Dino Land the Music Mixer
 
-Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in the land make sounds altogether that create music!
+Creating a Music Mixer called "Singing Pet Land" where the magical zoo pets in the land make sounds altogether that create music!
 
 <img src="images/cat.png">
 
@@ -15,5 +15,6 @@ Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in
 ## Credits
 
 Lilaine - milkfirst
+<br>
 Abdullah - greatgrate1234
  
