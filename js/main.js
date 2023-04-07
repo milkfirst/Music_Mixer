@@ -122,6 +122,8 @@ btn.addEventListener("click", function() {
   }
 });
 
+// close button
+
 let closeButton = document.querySelector('#closeBtn');
 
 closeButton.addEventListener('click', closeOverlay);
