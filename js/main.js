@@ -121,3 +121,11 @@ btn.addEventListener("click", function() {
     container.style.display = "block"
   }
 });
+
+let closeButton = document.querySelector('#closeBtn');
+
+closeButton.addEventListener('click', closeOverlay);
+
+function closeOverlay() {
+  document.getElementById("inst").style.display = "none";
+}

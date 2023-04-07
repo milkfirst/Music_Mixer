@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+body{
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,0.6878150918570554) 0%, rgba(252,70,107,0.7942576688878676) 100%); 
+}
+
 body p {
     margin: 0px;
     border: 0px;
@@ -40,6 +45,18 @@ h1, h2, h3, h4, h5, p {
     z-index: 5000;
 }
 
+.instruct p {
+    text-align: left;
+}
+
+#closeBtn {
+  border-radius: 30px; padding: 5px;
+  color: #ffffff;  background-color: black;
+  cursor: pointer;
+  position: absolute; top: 20px; left: 90%;
+  transition: all .3s ease;
+}
+
 #start-in{
 
   justify-content: center;
@@ -63,17 +80,12 @@ h1, h2, h3, h4, h5, p {
 
 }
 
-.instruct p {
-    text-align: left;
-}
 
 
 #main-container {
     width: 100%;
     text-align: center;
     padding-top: 20px;
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,0.6878150918570554) 0%, rgba(252,70,107,0.7942576688878676) 100%); 
 }
 
 .dino-pieces {
@@ -87,15 +99,36 @@ h1, h2, h3, h4, h5, p {
 }
 
 .dino {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    margin: 0 16px;
-    transition: all 0.3s ease;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 16px;
+  transition: all 0.3s ease;
 }
 
 .dino:hover {
-    transform: scale(1.5);    
+  animation: bounce 2s ease-in-out infinite;    
+}
+
+@keyframes bounce {
+0%,
+100% {
+  transform: translateY(0);
+}
+20%{
+  transform: translateY(-10px);
+}
+40% {
+  transform: translateY(-20px);
+}
+60% {
+  transform: translateY(-10px);
+}
+80% {
+  transform: translateY(-30px);
+} 
+
+
 }
 
 .dino-background {
@@ -115,7 +148,7 @@ h1, h2, h3, h4, h5, p {
     width: 40%;
     height: 40%;
     position: relative;
-    bottom: 40px;
+    bottom: -20px;
   }
   
   .drop-zone img {

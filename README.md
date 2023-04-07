@@ -1,32 +1,18 @@
-# The Singing Pet Show Music Mixer
-Creating a Music Mixer called "The Singing Pet Show" where the magical pets in the land make sounds together that create music!
+# Singing Dino Land the Music Mixer
 
-<img src="images/readme-img.png">
+Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in the land make sounds altogether that create music!
 
-<br>
-<br>
-<br>
+<img src="images/sample_dino1.png">
 
-## Contributing:
+## Contributing
+
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## Built with:
-Basic css and html: Layout and simple CSS animation
-<br>
-Javascript: Drag and drop functions, play selected audio function and button functions.
+## Credits
 
-## Collaborators:
-Lalaine - milkfirst
-<br>
-Abdullah - greatgrate1234
-
-## Credits:
-https://www.incredibox.com/
-
-## License
-
-MIT license
+Me :)
+ 
