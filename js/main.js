@@ -94,7 +94,7 @@ function dropped(e) {
 }
 
 
-//
+// start button
 
 const btn1 = document.querySelector('#start');
 const container1 = document.querySelector('#start-in');
@@ -121,3 +121,11 @@ btn.addEventListener("click", function() {
     container.style.display = "block"
   }
 });
+
+let closeButton = document.querySelector('#closeBtn');
+
+closeButton.addEventListener('click', instruct);
+
+function instruct() {
+  document.getElementById("inst").style.display = "none";
+}

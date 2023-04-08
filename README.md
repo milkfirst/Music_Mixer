@@ -14,5 +14,7 @@ Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in
 
 ## Credits
 
-Me :)
+Abdullah Sultan
+<Br>
+Lalaine Sy
  
