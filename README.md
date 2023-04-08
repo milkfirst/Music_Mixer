@@ -1,8 +1,12 @@
-# Singing Dino Land the Music Mixer
+# The Singing Pets Music Mixer
 
-Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in the land make sounds altogether that create music!
+Creating a Music Mixer called "The Singing Pets" where the magical pets sing on the stage altogether to create the best music!
 
-<img src="images/sample_dino1.png">
+<img src="images/singing-pets.png">
+
+## Drag and Drop 
+
+JavaScript functions and HTML/CSS used for functionality of the drag and drop music mixer
 
 ## Contributing
 
@@ -12,7 +16,13 @@ Creating a Music Mixer called "Singing Dino Land" where the magical dinosaurs in
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
+## License 
+
+MIT
+
 ## Credits
 
-Me :)
+Lalaine Sy 
+<br>
+Abdullah Sultan
  

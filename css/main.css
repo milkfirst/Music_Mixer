@@ -1,13 +1,19 @@
 @charset "utf-8";
 
+body{
+  background: rgb(63,94,251);
+  background: radial-gradient(circle, rgba(63,94,251,0.6878150918570554) 0%, rgba(252,70,107,0.7942576688878676) 100%); 
+}
+
 body p {
     margin: 0px;
     border: 0px;
     font-size: 20px;
 }
 
+
 body h1 {
-    font-size: 54px;
+    font-size: 34px;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -34,75 +40,115 @@ h1, h2, h3, h4, h5, p {
     padding-left: 20px;
     padding-right: 20px;
     margin-top: 50px;
+    left: 0;
+    right: 0;
+    z-index: 5000;
 }
 
 .instruct p {
     text-align: left;
 }
 
-
-#main-header {
-    margin-bottom: 30px;
+#closeBtn {
+  border-radius: 30px; padding: 5px;
+  color: #ffffff;  background-color: black;
+  cursor: pointer;
+  position: absolute; top: 20px; left: 90%;
+  transition: all .3s ease;
 }
+
+#start-in{
+
+  justify-content: center;
+  align-content: center;
+}
+.start-in {
+    border: 5px solid;
+    margin: auto;
+    padding: 10px;
+    position: absolute;
+    width: 320px;
+    height: auto;
+    background:rgb(51, 186, 6);
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    left: 0;
+    right: 0;
+    z-index: 5000;
+
+}
+
+
 
 #main-container {
     width: 100%;
     text-align: center;
-}
-
-.dino-pieces, .dino-background {
-    margin: 10px auto 0;
-    width: 100%;
-    height: 400px;
-    display: block;
-    overflow: hidden;
-    text-align: center;
-
+    padding-top: 20px;
 }
 
 .dino-pieces {
+    margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
     width: 700px;
-    border: 3px solid #333;
     cursor: pointer;
+    margin-top: -100px;
 }
 
 .dino {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-    margin: 8px;
-    transition: all 0.3s ease;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin: 0 16px;
+  transition: all 0.3s ease;
 }
 
 .dino:hover {
-    transform: scale(1.5) rotate(360deg);    
+  animation: bounce 2s ease-in-out infinite;    
 }
 
-.dino-background { 
-    width:1000px; 
-    display: inline-block;
-    background-image: url('../images/stage_bg.png');
-    background-repeat: no-repeat;
+@keyframes bounce {
+0%,
+100% {
+  transform: translateY(0);
+}
+20%{
+  transform: translateY(-10px);
+}
+40% {
+  transform: translateY(-20px);
+}
+60% {
+  transform: translateY(-10px);
+}
+80% {
+  transform: translateY(-30px);
+} 
+
+
 }
 
 .dino-background {
-    width: 600px;
+    margin: 0 auto;
+    width: 950px;
+    height: 500px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-image: url('../images/stage_bg.png');
     background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
   }
   
   .drop-zone {
     width: 40%;
     height: 40%;
     position: relative;
-    bottom: 40px;
+    bottom: -20px;
   }
   
   .drop-zone img {
@@ -150,6 +196,7 @@ h1, h2, h3, h4, h5, p {
     height: 40px;
     display: inline-block;
     margin-top: 25px;
+    margin-bottom: 20px;
     color: #fff;
     border: 2px solid rgb(1, 54, 9);
     border-radius: 5px;
@@ -163,8 +210,8 @@ h1, h2, h3, h4, h5, p {
     background: linear-gradient(rgb(37, 131, 6), rgb(12, 180, 174) 100%);
  }
  
- #resetButton {
+  #resetButton {
     width: 100%;
     text-align: center;
-    margin: 25px 0 25px 0;
+    margin-top: 20px;
  }

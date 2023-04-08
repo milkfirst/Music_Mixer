@@ -93,6 +93,22 @@ function dropped(e) {
   dropZone.appendChild(dino);
 }
 
+
+//
+
+const btn1 = document.querySelector('#start');
+const container1 = document.querySelector('#start-in');
+
+btn1.addEventListener("click", function() {
+  if(container1.style.display === "none") {
+    container1.style.display = "block"
+  } else {
+    container1.style.display = "none"
+  }
+});
+
+
+
 // Instrutions button 
 
 const btn = document.querySelector('#info');
@@ -105,3 +121,13 @@ btn.addEventListener("click", function() {
     container.style.display = "block"
   }
 });
+
+// close button
+
+let closeButton = document.querySelector('#closeBtn');
+
+closeButton.addEventListener('click', closeOverlay);
+
+function closeOverlay() {
+  document.getElementById("inst").style.display = "none";
+}
