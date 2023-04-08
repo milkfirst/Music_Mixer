@@ -2,7 +2,7 @@
 
 Creating a Music Mixer called "The Singing Pets" where the magical pets sing on the stage altogether to create the best music!
 
-<img src="images/singing-pets">
+<img src="images/singing-pets.png">
 
 ## Drag and Drop 
 
